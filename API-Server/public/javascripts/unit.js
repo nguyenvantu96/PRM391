@@ -20,11 +20,5 @@ module.exports = {
     },
     _DB_NAME : () => {
         return process.env.DB_NAME
-    },
-    _CLIENT_ID_FB : () => {
-        return process.env.CLIENT_ID_FB
-    },
-    _CLIENT_SECREATE : () => {
-        return process.env.CLIENT_SECREATE
     }
 }
