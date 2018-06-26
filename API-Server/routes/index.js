@@ -3,6 +3,7 @@ var router = express.Router();
 const table_question = require('../public/javascripts/dao/db_table_question');
 /* GET home page. */
 router.get('/', function(req, res, next) {
+  res.setHeader('Access-Control-Allow-Origin', '*');
   table_question.findAll({
     plain:false
   }).then(data =>{
